@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#outer-box{
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #130f40;
+}
+
+#container{
+  width: 530px;
+  display: flex;
+  height: 378px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#container > h2{
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#session-break-box{  
+  width: 329px;
+  margin-bottom: 31px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#break-box{
+  float: left;
+  width: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#break-label{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+#decrement-breakVal-increment{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+#break-decrement{
+  background-color: transparent;
+}
+
+#break-length{
+  margin-left: 13px;
+  margin-right: 13px;
+  font-size: 25px;
+}
+
+#break-increment{
+  background-color: transparent;
+}
+
+#session-box{
+  float: right;
+  width: 141px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#session-label{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+#decrement-sessionVal-increment{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+#session-decrement{
+  background-color: transparent;
+}
+
+#session-length{
+  margin-left: 13px;
+  margin-right: 13px; 
+  font-size: 25px;
+}
+
+#session-increment{
+  background-color: transparent;
+}
+
+#display{
+  background-color: black;
+  border-radius: 15px;
+  width: 234px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timer-label{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 23px;
+}
+
+#time-left{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+#buttons{
+  margin: 3px;
+}
+
+#start-stop{
+  margin: 3px;
+  background-color: transparent;
+}
+
+#reset{
+  background-color: transparent;
+}
+
+.faPlusMinus{
+  color: white;
+  padding: 5px;
+}
+
+#faPlayPause{
+  color: white;
+  padding: 5px;
+}
+
+#faSync{
+  color: white;
+  padding: 5px;
+}
+
+.button{
+  font-size: 18px;
+}
+
+.button:hover{
+    cursor: pointer;
+    
 }
